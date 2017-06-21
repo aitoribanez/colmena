@@ -7,6 +7,8 @@ const log = require('@colmena/logger')
 
 const app = (module.exports = loopback())
 
+require('loopback-component-passport')
+
 app.start = function() {
   // start the web server
   const server = app.listen(function() {
